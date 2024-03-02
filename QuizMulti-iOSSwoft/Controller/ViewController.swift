@@ -38,12 +38,6 @@ class ViewController: UIViewController {
         
         quizBrain.nextQuestion()
         
-        var queState = quizBrain.getQuestionState()
-        print(queState)
-        if queState {
-            self.performSegue(withIdentifier: "goToResult", sender: self)
-        }
-        
         Timer.scheduledTimer(timeInterval: 0.7, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
         
         
@@ -51,6 +45,13 @@ class ViewController: UIViewController {
     }
     
     @objc func updateUI(){
+        
+        let queState = quizBrain.getQuestionState()
+        
+        if queState {
+            self.performSegue(withIdentifier: "goToResult", sender: self)
+        }
+        
         questionLabel.text = "\(quizBrain.questionNumber+1) .  \(quizBrain.getQuestionTitle())"
         choice1.setTitle(quizBrain.getChoice1(), for: .normal)
         choice2.setTitle(quizBrain.getChoice2(), for: .normal)
@@ -60,13 +61,15 @@ class ViewController: UIViewController {
         choice3.backgroundColor = UIColor.clear
         progressBar.progress = quizBrain.getProgress()
         scoreLabel.text = "Score: \(quizBrain.getScore()) / \(quizBrain.quiz.count)"
+        
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToResult" {
             let destinationVC = segue.destination as! ResultViewController
-            destinationVC.getScore = quizBrain.getScore()
-            destinationVC.scoreTotal = quizBrain.quiz.count
+            destinationVC.getScore = String(quizBrain.getResultScore())
+            destinationVC.scoreTotal = String(quizBrain.quiz.count)
             
         }
     }

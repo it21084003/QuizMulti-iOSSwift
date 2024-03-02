@@ -10,16 +10,19 @@ import UIKit
 class ResultViewController: UIViewController {
     
     
-    var getScore = 0
-    var scoreTotal = 10
+    var getScore = "0"
+    var scoreTotal = "10"
     
     @IBOutlet weak var scoreLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        scoreLabel.text = " \(getScore) / \(scoreTotal)"
+        scoreLabel.text = "\(getScore) / \(scoreTotal)"
+        print("hee \(getScore)")
+        print(scoreTotal)
     }
   
     @IBAction func reStartbutton(_ sender: UIButton) {
