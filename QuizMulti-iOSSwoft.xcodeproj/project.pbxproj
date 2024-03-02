@@ -7,25 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F73253DE2B936BF800120923 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73253DD2B936BF800120923 /* ResultViewController.swift */; };
 		F7F660B42B8F1E2F00D23430 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F660B32B8F1E2F00D23430 /* AppDelegate.swift */; };
 		F7F660B62B8F1E2F00D23430 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F660B52B8F1E2F00D23430 /* SceneDelegate.swift */; };
 		F7F660B82B8F1E2F00D23430 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F660B72B8F1E2F00D23430 /* ViewController.swift */; };
 		F7F660BB2B8F1E2F00D23430 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F660B92B8F1E2F00D23430 /* Main.storyboard */; };
 		F7F660BE2B8F1E2F00D23430 /* QuizMulti_iOSSwoft.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7F660BC2B8F1E2F00D23430 /* QuizMulti_iOSSwoft.xcdatamodeld */; };
-		F7F660C02B8F1E3300D23430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7F660BF2B8F1E3300D23430 /* Assets.xcassets */; };
 		F7F660C32B8F1E3300D23430 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F660C12B8F1E3300D23430 /* LaunchScreen.storyboard */; };
+		F7F660CD2B8F27B900D23430 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F660CC2B8F27B900D23430 /* Quiz.swift */; };
+		F7F660D12B8F6F2600D23430 /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F660D02B8F6F2600D23430 /* QuizBrain.swift */; };
+		F7F660D32B8F74E100D23430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7F660D22B8F74E100D23430 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F73253DD2B936BF800120923 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		F7F660B02B8F1E2F00D23430 /* QuizMulti-iOSSwoft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuizMulti-iOSSwoft.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F660B32B8F1E2F00D23430 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7F660B52B8F1E2F00D23430 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F7F660B72B8F1E2F00D23430 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F7F660BA2B8F1E2F00D23430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7F660BD2B8F1E2F00D23430 /* QuizMulti_iOSSwoft.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuizMulti_iOSSwoft.xcdatamodel; sourceTree = "<group>"; };
-		F7F660BF2B8F1E3300D23430 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7F660C22B8F1E3300D23430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7F660C42B8F1E3300D23430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7F660CC2B8F27B900D23430 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		F7F660D02B8F6F2600D23430 /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
+		F7F660D22B8F74E100D23430 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Model/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +66,41 @@
 			children = (
 				F7F660B32B8F1E2F00D23430 /* AppDelegate.swift */,
 				F7F660B52B8F1E2F00D23430 /* SceneDelegate.swift */,
-				F7F660B72B8F1E2F00D23430 /* ViewController.swift */,
-				F7F660B92B8F1E2F00D23430 /* Main.storyboard */,
-				F7F660BF2B8F1E3300D23430 /* Assets.xcassets */,
+				F7F660CF2B8F27DF00D23430 /* Model */,
+				F7F660CB2B8F278A00D23430 /* Controller */,
+				F7F660CA2B8F272E00D23430 /* View */,
 				F7F660C12B8F1E3300D23430 /* LaunchScreen.storyboard */,
 				F7F660C42B8F1E3300D23430 /* Info.plist */,
 				F7F660BC2B8F1E2F00D23430 /* QuizMulti_iOSSwoft.xcdatamodeld */,
+				F7F660D22B8F74E100D23430 /* Assets.xcassets */,
 			);
 			path = "QuizMulti-iOSSwoft";
+			sourceTree = "<group>";
+		};
+		F7F660CA2B8F272E00D23430 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7F660B92B8F1E2F00D23430 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7F660CB2B8F278A00D23430 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7F660B72B8F1E2F00D23430 /* ViewController.swift */,
+				F73253DD2B936BF800120923 /* ResultViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7F660CF2B8F27DF00D23430 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7F660CC2B8F27B900D23430 /* Quiz.swift */,
+				F7F660D02B8F6F2600D23430 /* QuizBrain.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7F660C32B8F1E3300D23430 /* LaunchScreen.storyboard in Resources */,
-				F7F660C02B8F1E3300D23430 /* Assets.xcassets in Resources */,
+				F7F660D32B8F74E100D23430 /* Assets.xcassets in Resources */,
 				F7F660BB2B8F1E2F00D23430 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,7 +175,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7F660BE2B8F1E2F00D23430 /* QuizMulti_iOSSwoft.xcdatamodeld in Sources */,
+				F7F660CD2B8F27B900D23430 /* Quiz.swift in Sources */,
+				F73253DE2B936BF800120923 /* ResultViewController.swift in Sources */,
 				F7F660B82B8F1E2F00D23430 /* ViewController.swift in Sources */,
+				F7F660D12B8F6F2600D23430 /* QuizBrain.swift in Sources */,
 				F7F660B42B8F1E2F00D23430 /* AppDelegate.swift in Sources */,
 				F7F660B62B8F1E2F00D23430 /* SceneDelegate.swift in Sources */,
 			);
